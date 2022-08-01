@@ -21,14 +21,13 @@ about the character you choose.
 
 The main issues in the application development was:
 
-- Can't establish the way to put an image as a background for all the application within the "theme" properties.
-- The API consume about the "episodes" part throw a multiple error series that even with the help of some other developers can't find a way to solve it
+- The implementation of the search bar was pretty tricky, 'cause I can't find a way to make a refresh view without doing a fatal override
+- The implementation of the random character tabs in the detail view was pretty tricky too and can't find a way to make it
 
 ## To Conclude
 
-The test has some missing parts about the episodes consuming/showing part, but the authentication system is completely functional
-also was a very interesting and challenging prove my skills in witch I find some strengths and weakness in myself
-and finally if you got to this part I just want to say "please, don't fire me, I promise to better and someone valuable to this company".
+The test was a very interesting and challenging in some way, and actually I pretend to keep improve it with the knowledge
+that I get and finally want to say thank you for the chance to prove myself.
 
 Thanks for your attention.
 

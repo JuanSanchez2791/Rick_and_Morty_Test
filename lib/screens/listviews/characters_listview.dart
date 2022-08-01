@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty_test/screens/deatil/detail_screen.dart';
 import 'package:rick_and_morty_test/services/characters/get_characters.dart';
+import 'package:rick_and_morty_test/services/episodes/get_episode.dart';
 
-class CharacterListView extends StatelessWidget {
+class CharacterListView extends StatefulWidget {
   const CharacterListView({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<CharacterListView> createState() => _CharacterListViewState();
+}
+
+class _CharacterListViewState extends State<CharacterListView> {
+  final GetEpisodes getEpisodes = GetEpisodes();
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,11 +49,10 @@ class CharacterListView extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      padding: const EdgeInsets.all(10),
+                      //padding: const EdgeInsets.all(5),
                       margin: const EdgeInsets.only(
                         right: 10,
                         left: 10,
-                        top: 5,
                         bottom: 5,
                       ),
                       decoration: BoxDecoration(
@@ -92,17 +104,28 @@ class CharacterListView extends StatelessWidget {
                                 height: 15,
                               ),
                               const Text(
-                                'Origin: ',
+                                'First seen in: ',
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: Colors.grey,
                                 ),
                               ),
-                              Text(
-                                characters[index].origin.name,
-                                style: const TextStyle(
-                                  fontSize: 12,
-                                ),
+                              FutureBuilder(
+                                future: getEpisodes.getEpisode(characters[index].episode[0]),
+                                builder: (context, snapshot) {
+                                  if (snapshot.connectionState == ConnectionState.waiting) {
+                                    return const Center(child: CircularProgressIndicator());
+                                  }else {
+                                    var episodes = snapshot.data! as List<
+                                        dynamic>;
+                                    return Text(
+                                      episodes[0].name,
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    );
+                                  }
+                                }
                               ),
                             ],
                           ),

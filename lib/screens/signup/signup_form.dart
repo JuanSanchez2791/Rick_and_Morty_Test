@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty_test/components/rounded_buttom.dart';
+import 'package:rick_and_morty_test/components/social_media_buttons.dart';
+import 'package:rick_and_morty_test/screens/home/home_screen.dart';
 import 'package:rick_and_morty_test/screens/login/login_screen.dart';
 import 'package:rick_and_morty_test/services/auth/auth_response.dart';
 import 'package:rick_and_morty_test/services/auth/authentication_service.dart';
 import 'package:rick_and_morty_test/utils/util.dart';
-import '../home/home_screen.dart';
+
 
 class SignUpForm extends StatelessWidget {
   SignUpForm({Key? key}) : super(key: key);
@@ -165,6 +167,10 @@ class SignUpForm extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          /*const SocialMediaButtons(),
+          const SizedBox(
+            height: 30,
+          ),*/
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

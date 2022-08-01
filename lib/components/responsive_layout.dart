@@ -13,8 +13,9 @@ class ResponsiveLayout extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/background.jpg"),
-                fit: BoxFit.cover)),
+                image: AssetImage("assets/img/rick_and_morty_scenery.jpeg"),
+                fit: BoxFit.cover)
+        ),
         child: Center(
           child: SingleChildScrollView(
             child: Container(

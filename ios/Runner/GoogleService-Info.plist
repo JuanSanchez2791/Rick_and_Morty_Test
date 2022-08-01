@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>787605787018-nk5il6qaacls34shbdlkr3nls7o2b0av.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.787605787018-nk5il6qaacls34shbdlkr3nls7o2b0av</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>787605787018-6ah999g30hm2jd6icqo4h80djqsirkk9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD1YOtLpjgxw0_BlyQKzsvOSwG_k9Z8sKk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>787605787018</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.rickAndMortyTest</string>
+	<key>PROJECT_ID</key>
+	<string>rick-and-morty-test-b2e23</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rick-and-morty-test-b2e23.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:787605787018:ios:e5a27f744e024ee5adb873</string>
+</dict>
+</plist>
